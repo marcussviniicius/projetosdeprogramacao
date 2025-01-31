@@ -1,0 +1,85 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  left: -250px;
+  transition: all 0.5s;
+}
+
+.calc_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #b1d6bd;
+  width: 250px;
+  height: 350px;
+  gap: 10px;
+  border: 2px solid #2d4e37;
+  border-radius: 15px;
+}
+
+.calc_exibir {
+  left: 0px !important;
+  transition: all 0.5s;
+}
+
+.calc_aba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 50px;
+  background-color: #b1d6bd;
+  border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.div_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2d4e37;
+  width: 220px;
+}
+
+.display {
+  background-color: #55705c;
+  color: #ffffff;
+  width: 220px;
+  height: 30px;
+  text-align: right;
+  padding: 5px;
+}
+
+.div_teclas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  flex-wrap: wrap-reverse;
+  gap: 2px;
+}
+
+.tecla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b1d6bd;
+  color: #ffffff;
+  border: 2px solid #2d4e37;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
