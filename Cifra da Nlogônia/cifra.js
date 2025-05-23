@@ -1,6 +1,6 @@
 function cifrar(palavra){
     const alfabeto = 
-    ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "z"]
+    ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "z"] //alfabeto da questão
     const vogais = 
     ["a", "e", "i", "o", "u"]
     const letras = palavra.split("")
@@ -13,10 +13,17 @@ function cifrar(palavra){
         } 
         else{
             palavra_cifrada.push(letra)
-            if(letra == "z"){             //caso especial, tive que trata-lo individualmente
+            if(letra == "z"){             //casos especiais, tive que trata-los individualmente
                 palavra_cifrada.push("u")
                 palavra_cifrada.push("z") 
-            } else {
+            } else if(letra == "x") {
+                palavra_cifrada.push("u")
+                palavra_cifrada.push("z") 
+            } else if(letra == "v") {
+                palavra_cifrada.push("u")
+                palavra_cifrada.push("x") 
+            }
+            else {
                 let l = index - 1
                 let r = index + 1
                 while(true){
